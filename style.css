@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    font-family: "Lato", sans-serif;
+    background-color:white;
+    outline: none;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    height: auto;
+    width: auto;
+    }
+
+.text-animation {
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.author {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+   
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+.tweet-and-new {
+padding: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.quote-button {
+    padding: 10px;
+}
+
+.new-quote {
+    background-color: black;
+    border-radius: 20px;
+    border:none;
+    color: white;
+    outline: none; 
+    padding: 10px;
+}
+
+
+.tweet-quote i{
+    color: black;
+    font-size: 1.75rem;
+    padding: 10px;
+
+}
+
+  
+
+
+
